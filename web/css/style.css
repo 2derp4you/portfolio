@@ -1,0 +1,275 @@
+:root {
+    --mainColor: #21e08c;
+    --mainColor2: #00bd95;
+    --accent1: #21272f;
+    --accent2: #171c23;
+    --textColor: white;
+}
+
+body, html {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+div, p, h1, h2, h3, h4, h5 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+body {
+    background-color: var(--accent1);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+	width: 5px;
+}
+::-webkit-scrollbar-track {
+	background-color: var(--accent1);
+}
+::-webkit-scrollbar-thumb {
+	background: var(--mainColor);
+	border-radius: 20px;
+}
+
+.hidden {
+	opacity: 0;
+	transform: translateX(-100%);
+	transition: opacity 1s, filter 1s, transform 1s;
+}
+.show {
+	transform: translateX(0);
+	opacity: 1;
+}
+
+#header {
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    flex-direction: row;
+}
+
+#logo {
+    display: flex;
+    flex-grow: 3;
+    height: 100%;
+    justify-content: left;
+    align-items: center;
+    padding-left: 5vw;
+    color: var(--textColor);
+}
+
+.headerElem {
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: var(--textColor);
+}
+
+#search {
+    display: flex;
+    flex-grow: 4;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: var(--textColor);
+}
+
+#mainStart {
+    display: flex;
+    height: 80vh;
+    max-width: 100vw;
+    padding: 5vw;
+}
+
+#welcome {
+    display: flex;
+    height: auto;
+    width: 50%;
+    flex-direction: column;
+}
+
+#name {
+    color: var(--mainColor2);
+    margin: 0px;
+    font-size: 3.8rem;
+}
+
+#contact {
+    height: 6vh;
+    width: 15vw;
+    border-radius: 10px;
+    background-color: var(--mainColor);
+    cursor: pointer;
+}
+
+#contact:hover {
+    height: 7vh;
+    width: 16vw;
+}
+
+#welcomeText {
+    display: flex;
+    height: 58vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+#welcomeLinks {
+    display: flex;
+    height: 20vh;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#linkText {
+    display: flex;
+    height: 100%;
+    flex-grow: 1;
+    justify-content: left;
+    align-items: center;
+}
+
+.welcomeLinkElem {
+    display: flex;
+    height: 100%;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.welcomeLinkElem:nth-child(2) {
+    transition-delay: 600ms;
+}
+
+.welcomeLinkElem:nth-child(3) {
+    transition-delay: 900ms;
+}
+
+.welcomeLinkElem:nth-child(4) {
+    transition-delay: 1200ms;
+}
+
+.welcomeLinksImg {
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.welcomeLinksImg:hover {
+    height: 65px;
+    width: 65px;
+}
+
+#welcomeLinksSpace {
+    display: flex;
+    height: 100%;
+    flex-grow: 7;
+}
+
+#portrate {
+    padding-left: 15vw;
+}
+
+#portfolioImg {
+    width: 90%;
+    transition-delay: 300ms;
+}
+
+.mainElem {
+    display: flex;
+    padding: 5vw;
+    max-width: 100vw;
+    min-height: 85vh;
+    background-color: var(--accent2);
+    flex-direction: column;
+}
+
+.mainElem:nth-child(2) {
+    background-color: var(--accent2);
+}
+
+.mainElem:nth-child(3) {
+    background-color: var(--accent1);
+}
+
+.bigText {
+    color: var(--textColor);
+    font-size: 5rem;
+    margin: 0px;
+    font-weight: 550;
+}
+
+.mainElemHorizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 110px;
+    height: 100%;
+    width: 90vw;
+}
+
+.mainElemHorizontalElem {
+    display: flex;
+    height: 45vh;
+    width: 25vw;
+    border-radius: 20px;
+    background-color: var(--accent1);
+    flex-direction: column;
+}
+
+.mainElemHorizontalElem:hover {
+    height: 46vh;
+    width: 26vw;
+}
+
+.mainElemHorizontalElem:nth-child(2) {
+    transition-delay: 300ms;
+}
+
+.mainElemHorizontalElem:nth-child(3) {
+    transition-delay: 600ms;
+}
+
+.servicesImg {
+    display: flex;
+    width: 100%;
+    flex-grow: 8;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicesName {
+    display: flex;
+    width: 100%;
+    flex-grow: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicesDes {
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    width: 60%;
+    height: fit-content;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    flex-direction: column;
+}
