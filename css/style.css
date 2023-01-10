@@ -24,7 +24,6 @@ body {
     background-color: var(--accent1);
 }
 
-/* Scrollbar */
 ::-webkit-scrollbar {
 	width: 5px;
 }
@@ -44,6 +43,10 @@ body {
 .show {
 	transform: translateX(0);
 	opacity: 1;
+}
+
+.dontShowLink {
+    text-decoration: none !important;
 }
 
 #header {
@@ -267,9 +270,60 @@ body {
 .center {
     display: flex;
     width: 60%;
-    height: fit-content;
+    height: 20vh;
     justify-content: center;
     align-self: center;
     align-items: center;
     flex-direction: column;
+}
+
+.mainProjects {
+    display: flex;
+    width: 100%;
+    height: 65vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects {
+    display: flex;
+    width: 25vw;
+    height: 25vh;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.projects:hover {
+    width: 26vw;
+    height: 26vh;
+}
+
+.BigChungusGame {
+    transition-delay: 300ms;
+    background-image: url(../images/BigChungusGame.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.GeographyGame {
+    transition-delay: 600ms;
+    background-image: url(../images/GeographyGame.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.SchoolProjects {
+    transition-delay: 900ms;
+    background-image: url(../images/SchoolProjects.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.projectHeaders {
+    color: var(--textColor);
+    font-weight: bold;
+    text-shadow: 2px 2px black;
 }
