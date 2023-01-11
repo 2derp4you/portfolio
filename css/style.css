@@ -305,21 +305,21 @@ body {
     transition-delay: 300ms;
     background-image: url(../images/BigChungusGame.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
 }
 
 .GeographyGame {
     transition-delay: 600ms;
     background-image: url(../images/GeographyGame.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
 }
 
 .SchoolProjects {
     transition-delay: 900ms;
     background-image: url(../images/SchoolProjects.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
 }
 
 .projectHeaders {
