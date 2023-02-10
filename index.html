@@ -15,17 +15,26 @@
             <img src="./images/logo.svg" alt="logo" height="35%">
             <h2>&emsp;Sigve Tomten</h2>
         </div>
-        <div class="headerElem" style="color: var(--mainColor2)">
-            Home
+        <div class="headerElem">
         </div>
         <div class="headerElem">
-            Projects
         </div>
         <div class="headerElem">
-            Resume
         </div>
-        <div id="search">
-            "Search"
+        <div class="headerElem">
+            <a href="#whatIDo">
+                What i do
+            </a>
+        </div>
+        <div class="headerElem">
+            <a href="#projects">
+                Projects
+            </a>
+        </div>
+        <div class="headerElem">
+            <a href="./pages/cv.html">
+                CV
+            </a>
         </div>
     </header>
     <main id="main">
@@ -42,9 +51,11 @@
                     </p>
                     <br>
                     <br>
-                    <button id="contact">
-                        <h2 style="color: var(--textColor); margin: 0px;">Let's Talk</h2>
-                    </button>
+                    <div id="contactDiv">
+                        <button id="contact">
+                            <h2 style="color: var(--textColor); margin: 0px;">Let's Talk</h2>
+                        </button>
+                    </div>
                 </div>
                 <div id="welcomeLinks">
                     <div id="linkText">
@@ -54,10 +65,10 @@
                         <img src="./images/linkedin2.svg" alt="linkedin" class="welcomeLinksImg">
                     </div>
                     <div class="welcomeLinkElem hidden">
-                        <img src="./images/web2.svg" alt="web" class="welcomeLinksImg">
+                        <img src="./images/github.svg" alt="web" class="welcomeLinksImg">
                     </div>
                     <div class="welcomeLinkElem hidden">
-                        <img src="./images/mail2.svg" alt="mail" class="welcomeLinksImg">
+                        <img src="./images/mail4.svg" alt="mail" class="welcomeLinksImg">
                     </div>
                     <div id="welcomeLinksSpace">
                         
@@ -65,10 +76,10 @@
                 </div>
             </div>
             <div id="portrate">
-                <img src="./images/portfolioImage.png" alt="meg" id="portfolioImg" class="hidden">
+                <img src="./images/portfolioImage2.png" alt="meg" id="portfolioImg" class="hidden">
             </div>
         </div>
-        <div class="mainElem">
+        <div class="mainElem" id="whatIDo">
             <h2 style="color: var(--textColor)">My&nbsp<span style="color: var(--mainColor2)">services</span></h2>
             <p class="bigText">What I Do</p>
             <div class="mainElemHorizontal">
@@ -107,7 +118,7 @@
                 </div>
             </div>
         </div>
-        <div class="mainElem">
+        <div class="mainElem" id="projects">
             <div class="center">
                 <p class="bigText">Recent&nbsp<span style="color: var(--mainColor2)">Projects</span></p>
                 <p style="color: var(--textColor); text-align: center; width: 90%;">
@@ -135,8 +146,24 @@
             </div>
         </div>
     </main>
-    <!--<footer id="footer">
-        footer
-    </footer>-->
+    <footer id="footer">
+        <h2 style="color: var(--textColor)"><span style="color: var(--mainColor2)">Sigve</span>.dev</h2>
+        <hr id="footerHR">
+        <h4 style="color: var(--textColor)">
+            <a href="./pages/cv.html">CV</a>
+        </h4>
+        <h4 style="color: var(--textColor)">
+            <a href="https://www.linkedin.com/in/sigve-tomten-44754424b/">linkedin</a>
+        </h4>
+        <h4 style="color: var(--textColor)">
+            <a href="https://github.com/2derp4you">github</a>
+        </h4>
+        <h4 style="color: var(--textColor)">
+            mail:&nbsp<span style="color: var(--mainColor2)">stomten@gmail.com</span>
+        </h4>
+        <h4 style="color: var(--textColor)">
+            tlf:&nbsp<span style="color: var(--mainColor2)">+47 405 34 485</span>
+        </h4>
+    </footer>
 </body>
 </html>
